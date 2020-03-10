@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="business-bean" />
+        <module name="business-cart-service" />
+        <module name="business-cart-web" />
+        <module name="business-common-util" />
+        <module name="business-interface" />
+        <module name="business-item-web" />
+        <module name="business-list-service" />
+        <module name="business-list-web" />
+        <module name="business-manage-service" />
+        <module name="business-manage-web" />
+        <module name="business-order-service" />
+        <module name="business-order-web" />
+        <module name="business-passport-web" />
+        <module name="business-payment" />
+        <module name="business-service-util" />
+        <module name="business-usermanage" />
+        <module name="business-web-util" />
+        <module name="fastdfs-client-java" />
+        <module name="gware-manage" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="business-bean" target="1.8" />
+      <module name="business-cart-service" target="1.8" />
+      <module name="business-cart-web" target="1.8" />
+      <module name="business-common-util" target="1.8" />
+      <module name="business-interface" target="1.8" />
+      <module name="business-item-web" target="1.8" />
+      <module name="business-list-service" target="1.8" />
+      <module name="business-list-web" target="1.8" />
+      <module name="business-manage-service" target="1.8" />
+      <module name="business-manage-web" target="1.8" />
+      <module name="business-order-service" target="1.8" />
+      <module name="business-order-web" target="1.8" />
+      <module name="business-parent" target="1.8" />
+      <module name="business-passport-web" target="1.8" />
+      <module name="business-payment" target="1.8" />
+      <module name="business-service-util" target="1.8" />
+      <module name="business-usermanage" target="1.8" />
+      <module name="business-web-util" target="1.8" />
+      <module name="fastdfs-client-java" target="1.8" />
+      <module name="gware-manage" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

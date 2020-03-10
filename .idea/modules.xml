@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/business-bean/business-bean.iml" filepath="$PROJECT_DIR$/business-bean/business-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-cart-service/business-cart-service.iml" filepath="$PROJECT_DIR$/business-cart-service/business-cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-cart-web/business-cart-web.iml" filepath="$PROJECT_DIR$/business-cart-web/business-cart-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-common-util/business-common-util.iml" filepath="$PROJECT_DIR$/business-common-util/business-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-interface/business-interface.iml" filepath="$PROJECT_DIR$/business-interface/business-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-item-web/business-item-web.iml" filepath="$PROJECT_DIR$/business-item-web/business-item-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-list-service/business-list-service.iml" filepath="$PROJECT_DIR$/business-list-service/business-list-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-list-web/business-list-web.iml" filepath="$PROJECT_DIR$/business-list-web/business-list-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-manage-service/business-manage-service.iml" filepath="$PROJECT_DIR$/business-manage-service/business-manage-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-manage-web/business-manage-web.iml" filepath="$PROJECT_DIR$/business-manage-web/business-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-order-service/business-order-service.iml" filepath="$PROJECT_DIR$/business-order-service/business-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-order-web/business-order-web.iml" filepath="$PROJECT_DIR$/business-order-web/business-order-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-parent/business-parent.iml" filepath="$PROJECT_DIR$/business-parent/business-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-passport-web/business-passport-web.iml" filepath="$PROJECT_DIR$/business-passport-web/business-passport-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-payment/business-payment.iml" filepath="$PROJECT_DIR$/business-payment/business-payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-service-util/business-service-util.iml" filepath="$PROJECT_DIR$/business-service-util/business-service-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-usermanage/business-usermanage.iml" filepath="$PROJECT_DIR$/business-usermanage/business-usermanage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-web-util/business-web-util.iml" filepath="$PROJECT_DIR$/business-web-util/business-web-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/business1228.iml" filepath="$PROJECT_DIR$/.idea/business1228.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" filepath="$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gware-manage/gware-manage.iml" filepath="$PROJECT_DIR$/gware-manage/gware-manage.iml" />
+    </modules>
+  </component>
+</project>

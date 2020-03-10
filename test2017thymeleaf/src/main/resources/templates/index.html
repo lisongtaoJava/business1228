@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8"/>
+    <title>Title—Thymeleaf</title>
+</head>
+<body>
+    <h3>访问thymeleaf</h3>
+<div th:text="${name}" th:value="${name}"></div>
+
+    <h3>手机集合列表</h3>
+<table>
+    <!--测试循环-->
+    <table>
+        <!-- <c:foreach items="${arrayList}" var = "arry">-->
+        <tr th:each="arry,stat: ${arrayList}">
+            <td th:text="${arry}"></td>
+            <td th:text="${stat.index}"></td>
+        </tr>
+    </table>
+    <!--三元表达式-->
+    <h3>判断 三元表达式</h3>
+    <div th:text="${price}>=1199?'余额不足,无法完成订单交易 ':'请选择低于当前价格的物品'"></div>
+    <div th:text="(${price}>=1199)?'余额不足,无法完成订单交易':'请选择低于当前价格的物品'"></div>
+    <div th:text="${price}>='1199'?'余额不足,无法完成订单交易':'请选择低于当前价格的物品'"></div>
+    <div th:text="(${price}>='1199')?'余额不足,无法完成订单交易':'请选择低于当前价格的物品'"></div>
+
+    <h3>判断th:if</h3>
+    <div th:if="${stock}==库存" th:text="${stock}">test</div>
+    <div th:if="${stock}==库存">test''</div>
+
+    <h3>HttpSession</h3>
+    <span th:text="${session.address}"></span>
+
+    <h3>inner 内嵌页面</h3>
+    <div th:include="inner"></div>
+
+    <h3>测试颜色</h3>
+    <p th:utext="${lvse}"></p>
+
+</table>
+</body>
+</html>

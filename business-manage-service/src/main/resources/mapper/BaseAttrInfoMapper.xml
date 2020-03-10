@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--namespace : 实现方法所在接口的全路径-->
+<mapper namespace="com.atlisongtao.business1228.manage.mapper.BaseAttrInfoMapper">
+    <!--映射的结果集
+        id: resultMap唯一标识
+        type: 返回映射结果集的类型
+        autoMapping: true 自动映射
+    -->
+    <resultMap id="baseAttrInfoMap" type="com.atlisongtao.business1228.bean.BaseAttrInfo" autoMapping="true">
+        <!--id :标识主键
+            result：标识普通的字段
+            property: 标识实体类中的属性名
+            column: 标识通过sql语句查询出来的字段名
+        -->
+        <id property="id" column="id"></id>
+        <!-- mybatis
+            一对多，平台属性 平台属性值
+            多对一，
+         private List<BaseAttrValue> attrValueList;
+        -->
+        <collection property="attrValueList" ofType="com.atlisongtao.business1228.bean.BaseAttrValue" autoMapping="true">
+            <!--如果查询出来的字段名称一致，则需要给别名  BaseAttrValue.id = attr_value_id-->
+            <id property="id" column="attr_value_id"></id>
+        </collection>
+    </resultMap>
+    <!--
+    id : 表示方法名
+    resultMap: 返回的结果集
+    mybatis : 传入参数如何设置 #{0},#{1},#{2} ,第二种传值方式@Param("catalog3Id")
+    -->
+    <select id="getBaseAttrInfoListByCatalog3Id" resultMap="baseAttrInfoMap">
+        SELECT
+        bai.id,
+        bai.attr_name,
+        bai.catalog3_id,
+        bav.id attr_value_id,
+        bav.value_name,
+        bav.attr_id
+        FROM
+        base_attr_info bai
+        INNER JOIN base_attr_value bav ON bai.id = bav.attr_id
+        WHERE
+        catalog3_id = #{0}
+    </select>
+
+    <!-- $ :表示 字符串 82,14,83,13，# 一个占位符-->
+    <select id="selectAttrInfoListByIds" resultMap="baseAttrInfoMap">
+        SELECT ai.id,ai.attr_name,ai.catalog3_id, av.id attr_value_id ,av.attr_id ,av.value_name
+        FROM base_attr_info ai INNER JOIN base_attr_value av ON ai.id=av.attr_id
+        WHERE av.id IN (${valueIds})
+    </select>
+</mapper>
